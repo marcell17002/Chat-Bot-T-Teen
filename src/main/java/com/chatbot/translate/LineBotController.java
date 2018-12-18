@@ -82,9 +82,14 @@ public class LineBotController
                 //msgText = msgText.toLowerCase();
 
                 if (!msgText.contains("bot leave")){
-                    if(msgText.contains("tes")){
+                    if(msgText.contains("Siapa yang membuat mu ? ")){
 
                         String balas = "created : Marcell Antonius";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Hi")){
+
+                        String balas = "Hi , Kenalin aku T-Teen aku akan membantumu untuk merekomendasikan menu makananan hari ini yang sesuai dengan mood mu hari ini . Boleh aku tahu bagaimanakah perasaanmu hari ini ? ";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
                     String fromLang = "id";
