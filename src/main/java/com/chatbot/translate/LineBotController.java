@@ -82,7 +82,11 @@ public class LineBotController
                 //msgText = msgText.toLowerCase();
 
                 if (!msgText.contains("bot leave")){
+                    if(msgText.contains("tes")){
 
+                        String balas = "created : Marcell Antonius";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
                     String fromLang = "id";
                     String toLang = "su";
                     //String tex = "Let's have some fun!";
