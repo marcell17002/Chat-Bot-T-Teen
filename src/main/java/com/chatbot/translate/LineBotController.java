@@ -148,26 +148,28 @@ public class LineBotController
                         replyToUser(payload.events[0].replyToken, balas);
                     }
 
-                    String fromLang = "id";
-                    String toLang = "su";
-                    //String tex = "Let's have some fun!";
-
-                    translate(fromLang, toLang, msgText, payload.events[0].replyToken);
-
-                    //replyToUser(payload.events[0].replyToken, msgText);
-                    /*try {
-                        getMessageData(msgText, idTarget);
-                    } catch (IOException e) {
-                        System.out.println("Exception is raised ");
-                        e.printStackTrace();
-                    }
-                    */
+//                    String fromLang = "id";
+//                    String toLang = "su";
+//                    //String tex = "Let's have some fun!";
+//
+//                    translate(fromLang, toLang, msgText, payload.events[0].replyToken);
+//
+//                    //replyToUser(payload.events[0].replyToken, msgText);
+//                    /*try {
+//                        getMessageData(msgText, idTarget);
+//                    } catch (IOException e) {
+//                        System.out.println("Exception is raised ");
+//                        e.printStackTrace();
+//                    }
+//                    */
                 } else {
-                    if (payload.events[0].source.type.equals("group")){
-                        leaveGR(payload.events[0].source.groupId, "group");
-                    } else if (payload.events[0].source.type.equals("room")){
-                        leaveGR(payload.events[0].source.roomId, "room");
-                    }
+//                    if (payload.events[0].source.type.equals("group")){
+//                        leaveGR(payload.events[0].source.groupId, "group");
+//                    } else if (payload.events[0].source.type.equals("room")){
+//                        leaveGR(payload.events[0].source.roomId, "room");
+//                    }
+                    String balas = "Mohon maaf fitur ini akan terus diperbaiki untuk menunjang kenyamanan anda sekalian :))" ;
+                    replyToUser(payload.events[0].replyToken, balas);
                 }
 
             }
