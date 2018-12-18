@@ -162,6 +162,10 @@ public class LineBotController
 //                        e.printStackTrace();
 //                    }
 //                    */
+                     else{
+                        String balas = "Mohon maaf fitur ini akan terus diperbaiki untuk menunjang kenyamanan anda sekalian :))" ;
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
                 } else {
 //                    if (payload.events[0].source.type.equals("group")){
 //                        leaveGR(payload.events[0].source.groupId, "group");
