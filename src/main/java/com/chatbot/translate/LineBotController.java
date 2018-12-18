@@ -92,6 +92,62 @@ public class LineBotController
                         String balas = "Hi , Kenalin aku T-Teen aku akan membantumu untuk merekomendasikan menu makananan hari ini yang sesuai dengan mood mu hari ini . Boleh aku tahu bagaimanakah perasaanmu hari ini ? ";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
+                    if(msgText.contains("Sedih")){
+
+                        String balas = "Jika kamu sedang sedih, aku merekomendasikanmu makan makanan yang kaya akan Omega-3. Tujuannya adalah untuk meningkatkan moodmu hari ini  serta mengatasi tekanan agar tidak semakin larut dalam kesedihan . Makanan yang kaya Omega-3 antara lain: ikan-ikanan, telur, daging merah . Nah , dari pilihan itu kamu pilih yang mana ? ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Ikan")){
+
+                        String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . ikan bakar , ikan goreng , ikan sayur . Kamu mau pilih yang mana ? ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Ikan Bakar")){
+
+                        String balas = "kamu bisa pergi ke tempat makan berikut . Kantin Bale , Kantin FK dan Kantin Psikologi disana meneyediakan makanan yang kamu pilih . :)) ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Marah")){
+
+                        String balas = "Saat sedang marah jangan biarkan emosi Anda meledak-ledak dan menguasai. Hasilnya akan berbahaya lho. Mengatasi hal ini lebih baik Anda menenangkan diri dengan mengonsumsi makanan yang kaya akan zinc. Menurut penelitian di Jepang, seperti dikutip dari ivillage.co.uk, zinc dapat membantu mengendalikan emosi dan meredakan kemarahan. Makanan yang kaya zinc antara lain: daging merah, ayam, produk susu, makanan laut, gandum-ganduman, kacang-kacangan. Nah , dari pilihan itu kamu pilih yang mana ?"    ;
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Daging merah")){
+
+                        String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . Tenderloin , sop buntut  . Kamu mau pilih yang mana ? ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Sop buntut")){
+
+                        String balas = "kamu bisa pergi ke tempat makan berikut . Kantin Pedca , Kantin FIB dan Kantin Psikologi disana meneyediakan makanan yang kamu pilih . :))";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Jatuh cinta")){
+
+                        String balas = "Sedang jatuh cinta dan berbunga-bunga? Ada beberapa makanan yang akan membuatmu semakin ceria dan menambah gairah asmara cinta. Makanan yang harus diasup adalah yang mengandung zinc, arginine, selenium dan niacin. Makanan ini bisa disebut juga sebagai afrodisiak. Membangkitkan gairah dalam hal cinta serta seksual. Di antara lain seperti: kuaci labu, tiram, cabai, cokelat, daging kambing, alpukat, ikan-ikanan, dan lain sebagainya. Nah , dari pilihan itu kamu pilih yang mana ?";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Daging kambing")){
+
+                        String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . sop iga kambing , iga kambing bakar . Kamu mau pilih yang mana ? ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Sop iga kambing")){
+
+                        String balas = "kamu bisa pergi ke tempat makan berikut . Kantin Pedca , Kantin FIB dan Kantin Psikologi disana meneyediakan makanan yang kamu pilih . :) ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Ga pede")){
+
+                        String balas = "Kalau sedang tak percaya diri ada beberapa makanan yang bisa disantap untuk meningkatkan kepercayaan diri Anda.Para peneliti di McGill University Monteral mengatakan bahwa mengatasi kurang percaya diri bisa dengan mengonsumsi makanan yang mengandung tryptophan. Makanan yang menjadi sumber tryptophan antara lain: daging (terutama ayam), ikan (terutama salmon dan tuna). Nah , dari pilihan itu kamu pilih yang mana ?";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+                    if(msgText.contains("Ayam")){
+
+                        String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . ayam goreng , ayam geprek, ayam rica-rica, ayam sayur, dan ayam karedok . Kamu mau pilih yang mana ";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }
+
                     String fromLang = "id";
                     String toLang = "su";
                     //String tex = "Let's have some fun!";
