@@ -87,7 +87,7 @@ public class LineBotController
                         String balas = "created : Marcell Antonius dan Felia Sri Indriyani";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
-                    if(msgText.contains("hi")){
+                    if(msgText.contains("Hi")){
 
                         String balas = "Hi , Kenalin aku T-Teen aku akan membantumu untuk merekomendasikan menu makananan hari ini yang sesuai dengan mood mu hari ini . Boleh aku tahu bagaimanakah perasaanmu hari ini ? ";
                         replyToUser(payload.events[0].replyToken, balas);
@@ -117,7 +117,6 @@ public class LineBotController
                         String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . ikan bakar , ikan goreng , ikan sayur . Kamu mau pilih yang mana ? ";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
-
                     if(msgText.contains("Daging merah")){
 
                         String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . Tenderloin , sop buntut  . Kamu mau pilih yang mana ? ";
@@ -181,6 +180,10 @@ public class LineBotController
                     if(msgText.contains("Sop buntut")){
 
                         String balas = "kamu bisa pergi ke tempat makan berikut . Kantin Pedca , Kantin FIB dan Kantin Psikologi disana menyediakan makanan yang kamu pilih . :))";
+                        replyToUser(payload.events[0].replyToken, balas);
+                    }if(msgText.contains("Ayam x")){
+
+                        String balas = "FElkamu bisa pergi ke tempat makan berikut . Kantin Pedca , Kantin FIB dan Kantin Psikologi disana menyediakan makanan yang kamu pilih . :))";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
                     if(msgText.contains("Ayam karedok")){
