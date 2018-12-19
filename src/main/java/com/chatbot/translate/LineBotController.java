@@ -303,26 +303,26 @@ public class LineBotController
         }
     }
 
-    private void leaveGR(String id, String type){
-        try {
-            if (type.equals("group")){
-                Response<BotApiResponse> response = LineMessagingServiceBuilder
-                        .create(lChannelAccessToken)
-                        .build()
-                        .leaveGroup(id)
-                        .execute();
-                System.out.println(response.code() + " " + response.message());
-            } else if (type.equals("room")){
-                Response<BotApiResponse> response = LineMessagingServiceBuilder
-                        .create(lChannelAccessToken)
-                        .build()
-                        .leaveRoom(id)
-                        .execute();
-                System.out.println(response.code() + " " + response.message());
-            }
-        } catch (IOException e) {
-            System.out.println("Exception is raised ");
-            e.printStackTrace();
-        }
-    }
+//    private void leaveGR(String id, String type){
+//        try {
+//            if (type.equals("group")){
+//                Response<BotApiResponse> response = LineMessagingServiceBuilder
+//                        .create(lChannelAccessToken)
+//                        .build()
+//                        .leaveGroup(id)
+//                        .execute();
+//                System.out.println(response.code() + " " + response.message());
+//            } else if (type.equals("room")){
+//                Response<BotApiResponse> response = LineMessagingServiceBuilder
+//                        .create(lChannelAccessToken)
+//                        .build()
+//                        .leaveRoom(id)
+//                        .execute();
+//                System.out.println(response.code() + " " + response.message());
+//            }
+//        } catch (IOException e) {
+//            System.out.println("Exception is raised ");
+//            e.printStackTrace();
+//        }
+//    }
 }
