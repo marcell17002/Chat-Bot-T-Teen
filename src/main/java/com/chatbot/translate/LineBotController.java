@@ -84,7 +84,7 @@ public class LineBotController
                 if (!msgText.contains("bot leave")){
                     if(msgText.contains("Siapa yang membuat mu ? ")){
 
-                        String balas = "created : Marcell Antonius";
+                        String balas = "created : Marcell Antonius dan Felia Sri indriyani";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
                     if(msgText.contains("Hi")){
@@ -147,31 +147,11 @@ public class LineBotController
                         String balas = "Nah berikut ini adalah menu makananan hasil rekomendasiku untuk makanan yang kamu pilih . ayam goreng , ayam geprek, ayam rica-rica, ayam sayur, dan ayam karedok . Kamu mau pilih yang mana ";
                         replyToUser(payload.events[0].replyToken, balas);
                     }
-
-//                    String fromLang = "id";
-//                    String toLang = "su";
-//                    //String tex = "Let's have some fun!";
-//
-//                    translate(fromLang, toLang, msgText, payload.events[0].replyToken);
-//
-//                    //replyToUser(payload.events[0].replyToken, msgText);
-//                    /*try {
-//                        getMessageData(msgText, idTarget);
-//                    } catch (IOException e) {
-//                        System.out.println("Exception is raised ");
-//                        e.printStackTrace();
-//                    }
-//                    */
                     else{
                         String balas = "Mohon maaf fitur ini akan terus diperbaiki untuk menunjang kenyamanan anda sekalian :))" ;
                         replyToUser(payload.events[0].replyToken, balas);
                     }
                 } else {
-//                    if (payload.events[0].source.type.equals("group")){
-//                        leaveGR(payload.events[0].source.groupId, "group");
-//                    } else if (payload.events[0].source.type.equals("room")){
-//                        leaveGR(payload.events[0].source.roomId, "room");
-//                    }
                     String balas = "Mohon maaf fitur ini akan terus diperbaiki untuk menunjang kenyamanan anda sekalian :))" ;
                     replyToUser(payload.events[0].replyToken, balas);
                 }
