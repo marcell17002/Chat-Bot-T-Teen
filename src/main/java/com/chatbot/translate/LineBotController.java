@@ -79,7 +79,7 @@ public class LineBotController
                 replyToUser(payload.events[0].replyToken, "Unknown message");
             } else {
                 msgText = payload.events[0].message.text;
-                msgText = msgText.toLowerCase();
+                //msgText = msgText.toLowerCase();
 
                 if (!msgText.contains("bot leave")){
                     if(msgText.contains("Siapa yang membuat mu ? ")){
